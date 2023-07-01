@@ -1,0 +1,169 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: #4a85c400;
+      box-shadow: 0px 2px 0px #356c9000;
+      color: #cbc7ff;
+      border-radius: 10px;
+      font-size: 60px;
+      font-stretch: 20;
+    }
+  }
+
+  a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+#canciones {
+  background-image: url("../imagenes/DJ.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5.25%;
+  color: white;
+}
+
+#comentarios {
+  background-image: url("../imagenes/otroDJ.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5.25%;
+  color: rgba(19, 19, 19, 0.61);
+}
+
+#contacto {
+  background-image: url("../imagenes/DJ3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5.25%;
+  color: white;
+}
+
+#sobremi {
+  background-image: url("../imagenes/cushogod.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5.25%;
+  color: rgba(19, 19, 19, 0.61);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.rectangulo {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin: 20px;
+  max-width: 400px;
+
+  &.celeste {
+    background-color: #4dc2c27d;
+  }
+
+  &.amarillo {
+    background-color: #ffd9007d;
+  }
+
+  h2 {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0px 1px 0px #8a85e9;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #4a85c45f;
+      box-shadow: 0px 2px 0px #356c90;
+      border-radius: 10px;
+      font-size: 50px;
+    }
+  }
+
+  p {
+    color: #7e7e7e;
+    margin: 1;
+    font-size: 20px;
+    text-align: justify;
+    box-shadow: 0px 1px 0px #8a85e9;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+		background-color: #4a85c400;
+		box-shadow: 0px 2px 0px #356c9000;
+		border-radius: 10px;
+		font-size: 30px; }
+	}
+
+	.boton-link {
+		background-color: #007acc;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 20px;
+		font-size: 18px;
+		cursor: pointer;
+		box-shadow: 0px 1px 0px #1564b7;
+		transition: all 0.1s ease-in-out;
+	  
+		&:hover {
+		  background-color: #15b735;
+		  box-shadow: 0px 2px 0px #00cc2c;
+		  border-radius: 10px;
+		  font-size: 20px;
+		}
+	  }
+	  
+	textarea {
+		border: 1px solid black;
+	  }
+	  
+	.comentario {
+		font-family: Arial;
+	  }
+	  
+	#w3review {
+		background-color: lightgray;
+	  }
+	  
+	textarea[placeholder] {
+		color: gray;
+	  }
+	  
+	.grid-item {
+		align-self: center;
+	  }
+	  
+	.textarea-item {
+		grid-row: span 5;
+	  }
+	  
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: repeat(5, auto);
+		grid-gap: 10px;
+	  }
+	  
+}
+
+// Acá mejoré la escritura en SASS que estaba mal hecha antes

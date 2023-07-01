@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deja un comentario</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+        <body id="comentarios">
+    </head>
+  <body>
+    <header class="cabecera">
+      <button onclick="location.href='../actividad.html'">Inicio</button>
+      <button onclick="location.href='canciones.html'">Canciones</button>
+      <button onclick="location.href='sobremi.html'">Sobre mi</button>
+      <button onclick="location.href='contacto.html'">Contacto</button>
+      <button class="btn" onclick="location.href='comentarios.html'">Comentarios</button>
+    </header>
+    <div style="background-color: #ffffff3e; padding: 20px;">
+        <form action="actividad.html">
+          <div class="grid-container">
+            <label for="nombre" class="grid-item">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="grid-item"/>
+            <label for="apellido" class="grid-item">Apellido:</label>
+            <input type="email" id="correo" name="correo" required class="grid-item"/>
+            <label for="mensaje" class="grid-item">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="10" cols="100" required class="textarea-item">Escribí tu comentario acá</textarea>
+          <p>Cuentame que te parece mi trabajo</p>
+          <input type="submit" value="Enviar" class="boton-link"/>
+          </div>
+          </form>
+    </div>
+    <footer>
+      <h6>&copy; 2023 Sitio web de Dj Finn. Todos los derechos reservados.</h6>
+    </footer>
+  </body>
+</html>

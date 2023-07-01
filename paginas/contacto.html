@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+    <body id="contacto">
+  </head>
+  <body>
+    <header class="cabecera">
+      <button onclick="location.href='../actividad.html'">Inicio</button>
+      <button onclick="location.href='canciones.html'">Canciones</button>
+      <button onclick="location.href='sobremi.html'">Sobre mi</button>
+      <button class="btn" onclick="location.href='contacto.html'">Contacto</button>
+      <button onclick="location.href='comentarios.html'">Comentarios</button>
+    </header>
+
+    <main>
+      <div style="background-color: #0000008f; padding: 25px;">
+      <h1>Contacto</h1>
+      <p>¡Gracias por visitar mi sitio! Si estás interesado en contratar mis servicios como DJ, por favor completa el siguiente formulario y te responderé a la brevedad.</p>
+
+      <form action="enviar.php" method="POST">
+        <div class="grid-container">
+          <label for="nombre" class="grid-item">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required class="grid-item"/>
+          <label for="correo" class="grid-item">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required class="grid-item"/>
+          <label for="telefono" class="grid-item">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required class="grid-item"/>
+          <label for="fecha" class="grid-item">Fecha del evento:</label>
+          <input type="date" id="fecha" name="fecha" required class="grid-item"/>
+          <label for="mensaje" class="grid-item">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="10" cols="100" required class="textarea-item">Hola! Como estas? Queria consultar sobre...</textarea>
+        </div>
+        <input type="submit" value="Enviar" class="boton-link"/>
+      </form>
+
+      <p>Ante cualquier inconveniente, contacte a <a href="mailto:maildeprueba@gmail.com">maildeprueba@gmail.com</a></p>
+    </div>
+    <div>
+
+    </div>
+    </main>
+    <footer>
+      <h6>&copy; 2023 Sitio web de Dj Finn. Todos los derechos reservados.</h6>
+    </footer>
+  </body>
+</html>
